@@ -1,23 +1,21 @@
 import 'package:flutter/material.dart';
 import 'screens/general_purpose/home_screen.dart';
+import 'screens/editor/test_editor.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() => runApp(MaterialApp(
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
+  routes: {
+    "/": (context) => MyHomePage(),
+    '/editor_test': (context) => TestEditor(),
+    // "/": (context) => (),
+    // "/": (context) => (),
+    // "/": (context) => (),
+    // "/": (context) => (),
+    // "/": (context) => (),
 
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Home Page'),
-    );
-  }
-}
+  },
+)
+);
+
 
 
